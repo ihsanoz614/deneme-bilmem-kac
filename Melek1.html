@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sevgilim Elif'e</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #2c3e50;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 24px;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+        .heart {
+            font-size: 60px;
+            color: red;
+            animation: beat 1s infinite;
+        }
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        img {
+            width: 300px;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .date {
+            font-size: 20px;
+            color: #555;
+        }
+        audio {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Canım Elif 💖</h1>
+    <div class="heart">❤️</div>
+
+    <img src="sen-ve-ben.jpg" alt="Birlikte Fotoğrafımız">
+    <!-- Fotoğraf dosyanın ismini ve uzantısını kendi dosyana göre değiştir -->
+
+    <p>Seninle tanıştığımız o güzel <strong>22 Haziran 2022</strong> gününden beri hayatım bambaşka.</p>
+    <p>Gülüşünle içimi ısıtan, varlığınla beni tamamlayan sensin. Seni her geçen gün daha çok seviyorum...</p>
+    <p>Bu küçük sayfa, sana duyduğum büyük sevginin dijital bir yansıması 💫</p>
+
+    <p class="date">Bugünün tarihi: <script>document.write(new Date().toLocaleDateString('tr-TR'))</script></p>
+
+    <!-- Müzik (yerel dosya) -->
+    <audio controls autoplay loop>
+        <source src="ask-sarkisi.mp3" type="audio/mpeg">
+        Tarayıcınız bu müzik formatını desteklemiyor.
+    </audio>
+
+</body>
+</html>
